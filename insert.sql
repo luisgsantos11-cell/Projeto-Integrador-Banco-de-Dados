@@ -3,7 +3,7 @@ VALUES (1, 'Luis', 'LG12', 'LG24'),
 	   (2, 'PY', 'PY1', 'PY2'),
        (3, 'PV', 'PV1', 'PV2');
 
-INSERT INTO tenico(id_usuario, registro_profissional)
+INSERT INTO tecnico(id_usuario, registro_profissional)
 VALUES (1, CFT);
 
 INSERT INTO gerente (id_usuario, nivel_gerente)
