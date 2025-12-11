@@ -23,6 +23,10 @@ CREATE USER 'Luis123'@'%' IDENTIFIED BY 'Guilherme123';
 CREATE USER 'Luis456'@'%' IDENTIFIED BY 'Paulo456';
 CREATE USER 'Jorge789'@'%' IDENTIFIED BY 'Farias789';
 
+RENAME USER 'Luis123'@'%' TO 'Tecnico'@'%';
+RENAME USER 'Luis456'@'%' TO 'Gerente'@'%';
+RENAME USER 'Jorge789'@'%' TO 'Coordenador'@'%';
+
 -- dando privilégios a eles
 GRANT SELECT, INSERT ON TechMec.equipamento TO 'Luis123'@'%';
 GRANT SELECT ON TechMec.relatorio_desempenho TO 'Luis456'@'%';
@@ -48,6 +52,7 @@ COMMIT;
 START TRANSACTION;
 
 INSERT INTO tecnico(id_usuario, registro_profissional)
-VALUES (7, 'Aura');
+VALUES (4, 'Aura');
 
+-- Alteração feita dentro dessa transição iniciada é desfeita pelo Rollback
 ROLLBACK;
