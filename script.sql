@@ -86,3 +86,11 @@ CREATE TABLE relatorio_desempenho (
     id_gerente BIGINT NOT NULL,
     FOREIGN KEY (id_gerente) REFERENCES gerente(id_usuario)
 );
+
+CREATE TABLE manutencao_preventiva(
+	id_manutencao BIGINT AUTO_INCREMENT PRIMARY KEY,
+    data_agendada VARCHAR(50),
+    data_conclusao VARCHAR(50),
+    executada VARCHAR(50),
+    FOREIGN KEY (id_manutencao) REFERENCES tecnico(id_usuario)
+    );
