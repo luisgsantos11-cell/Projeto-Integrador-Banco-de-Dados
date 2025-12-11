@@ -46,3 +46,8 @@ Tecnico 1:N Equipamento
 Equipamento 1-N Ordem Serviço. 
 Manutencao Preventiva 1-N Registro Historico.
 Relatorio Desempenho 1-N Registro Historico.
+
+--------------------------------------------------------------------------------------
+COMO RODAR O BANCO
+======================================================================================
+Primeiramente abra o s
