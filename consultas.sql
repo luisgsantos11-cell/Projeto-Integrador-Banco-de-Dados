@@ -6,6 +6,7 @@ SELECT*FROM usuario;
 -- Checando a tabela do tecnico para ver o preenchimento de informações dela
 SELECT*FROM tecnico;
 
+-- Checando a tabela do coordenador para ver o preenchimento de informações nas colunas
 SELECT*FROM coordenador;
 
 -- Checando a tabela de equipamentos para ver o preenchimento de informações dela
